@@ -14,15 +14,15 @@
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
+        data-bs-target="#navbarDropDown"
+        aria-controls="navbarDropDown"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <font-awesome-icon class="me-3" :icon="['fas', 'bars']" />
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarDropDown">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#"
