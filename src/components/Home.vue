@@ -330,6 +330,7 @@ export default defineComponent({
     display: flex;
     .title {
       display: flex;
+      font-weight: bold;
       width: 100%;
       justify-content: center;
       align-items: center;
