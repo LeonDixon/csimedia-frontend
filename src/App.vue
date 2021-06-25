@@ -51,17 +51,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-$black: #000;
-$dark-pink: #d90f5a;
-$caribbean-green: #0de5a8;
-$medium-turquoise: #30c4c9;
-$burnt-orange: #ff6e27;
-$strong-blue: #005bc5;
-$vivid-orange: #ffb60b;
-$dark-magenta: #4f2958;
-$dark-blue: #212d44;
-$strong-green: #88c100;
-
 .navbar-brand {
   display: flex;
   justify-content: center;
@@ -73,11 +62,8 @@ $strong-green: #88c100;
 }
 
 nav {
+  z-index: 1;
   .nav-item {
-    /*margin-right: 20px;*/
-    /*&:first-of-type {*/
-    /*margin-left: auto;*/
-    /*}*/
     font-size: 1.2em;
   }
   .nav-link {
@@ -101,7 +87,7 @@ nav {
   background: $dark-blue;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Dosis", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

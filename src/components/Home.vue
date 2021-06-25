@@ -1,15 +1,11 @@
 <template>
   <div class="home">
     <!-- <div><img class="main-image" src="@/assets/school.jpg" alt="" /></div> -->
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
+    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselIndicators"
           data-bs-slide-to="0"
           class="active"
           aria-current="true"
@@ -17,13 +13,13 @@
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselIndicators"
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselIndicators"
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
@@ -60,7 +56,7 @@
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carouselIndicators"
         data-bs-slide="prev"
       >
         <span
@@ -73,7 +69,7 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carouselIndicators"
         data-bs-slide="next"
       >
         <span
@@ -87,10 +83,8 @@
     <div class="row m-0">
       <div class="image-wrapper col-sm-12 col-md-6 col-lg-3">
         <div class="image-container">
-          <img class="image-container" src="@/assets/rugby.jpg" alt="" />
-          <div style="background: #d90f5a" class="title">
-            <p>PASTORAL SUPPORT</p>
-          </div>
+          <img src="@/assets/rugby.jpg" alt="" />
+          <div style="background: #d90f5a" class="title">PASTORAL SUPPORT</div>
         </div>
       </div>
       <div class="image-wrapper col-12 col-md-6 col-lg-3">
@@ -244,17 +238,6 @@ export default defineComponent({
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->j
 <style scoped lang="scss">
-$black: #000;
-$dark-pink: #d90f5a;
-$caribbean-green: #0de5a8;
-$medium-turquoise: #30c4c9;
-$burnt-orange: #ff6e27;
-$strong-blue: #005bc5;
-$vivid-orange: #ffb60b;
-$dark-magenta: #4f2958;
-$dark-blue: #212d44;
-$strong-green: #88c100;
-
 .socials-container {
   background: #005bc5;
   padding: 20px 30px;
@@ -267,7 +250,7 @@ $strong-green: #88c100;
 }
 
 .carousel {
-  z-index: -1;
+  z-index: 0;
 }
 .carousel-caption {
   top: 46%;
@@ -335,6 +318,8 @@ $strong-green: #88c100;
 .main-image {
   height: 500px;
   width: 100%;
+  filter: brightness(70%);
+  -webkit-filter: brightness(70%);
   object-fit: cover;
   object-position: 50% 80%;
 }
@@ -392,19 +377,5 @@ $strong-green: #88c100;
   .map-wrapper {
     height: 417px;
   }
-}
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>
